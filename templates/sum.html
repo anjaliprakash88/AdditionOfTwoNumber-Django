@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUM</title>
+    <style>
+    body
+    {
+    height: 100vh;
+    background-color:#c9c9fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.05rem;
+    margin: 0; /* Remove default margin to fit the entire viewport */
+    }
+
+    .form-card
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    margin-top: -150px;
+    padding: 20px;
+    }
+
+    h1
+    {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 10px;
+    }
+
+    label
+    {
+    display: block; /* Make labels appear on a new line */
+    }
+
+    input
+    {
+    border-radius: 5px;
+    border: solid 1px #c9c9ec;
+    margin-bottom: 20px;
+    height: 20px;
+    padding: 10px; /* Add padding for better input appearance */
+    }
+
+    input:hover, input:focus
+    {
+    cursor: pointer;
+    outline: 1px solid #c9c9ec;
+    }
+
+    button
+    {
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px #c9c9ec;
+    background-color: #c9c9ec;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 20px;
+    width: fit-content;
+    }
+
+    button:hover
+    {
+    background-color: #9c9cec;
+    }
+
+    button:focus, button:active
+    {
+    outline: solid 1px #9c9cec;
+    background-color: rgb(234, 255, 255);
+
+    p
+    {
+    margin: 10px 0; /* Add margin for better spacing */
+    }
+    a
+    {
+    text-decoration: none;
+    color: #9c9cec;
+    }
+</style>
+</head>
+<body>
+<!--<form method="get" action="findsum">-->
+<!--    <input type="text" name="number1" placeholder="Enter first number"><br>-->
+<!--    <input type="text" name="number2" placeholder="Enter second number">-->
+<!--    <button>SUM</button>-->
+<!--    <h1>{{res}}</h1>-->
+<!--</form>-->
+
+
+<div class="form-card">
+    <form method="get" action="findsum">
+        <h1>Addition</h1>
+        <input type="text" name="number1" placeholder="Enter first number"><br>
+        <input type="text" name="number2" placeholder="Enter second number"><br>
+        <button>SUM =</button>
+        <button>{{res}}</button>
+    </form>
+</div>
+    <svg
+        style="position: fixed; bottom: 0; left: 0; right: 0; z-index: -1;"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+    >
+        <path
+            fill="white"
+            fill-opacity="2"
+            d="M0, 288L48, 272C96, 256, 192, 224, 288, 197.3C384,171, 480, 149, 576, 165.3C672, 181, 768, 235, 864, 250.7C960, 267, 1056, 245, 1152, 250.7C1248, 256, 1344, 288, 1392, 304L1440, 320L1440, 320L1392, 320C1344, 320, 1248, 320, 1152, 320C1056, 320, 960, 320, 864, 320C768, 320, 672, 320, 576, 320C488, 320, 384, 320, 288, 320C192, 320, 96, 320, 48, 320L0, 320Z  "
+        ></path>
+    </svg>
+</body>
+</html>
